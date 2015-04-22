@@ -28,8 +28,17 @@ nav {
   @include transition($transitions, 0.3s);
 
   .brand-logo, li a {
-    color: #000000;
+    color: white;
   }
+}
+
+.navbar-fixed {
+  height: 0;
+}
+
+.background-slider {
+  height: 100vh;
+  width: 100vmax
 }
 
 nav.shrink {

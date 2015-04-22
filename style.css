@@ -20,7 +20,14 @@ nav {
   -o-transition:  0.3s;
   transition:  0.3s; }
   nav .brand-logo, nav li a {
-    color: #000000; }
+    color: white; }
+
+.navbar-fixed {
+  height: 0; }
+
+.background-slider {
+  height: 100vh;
+  width: 100vmax; }
 
 nav.shrink {
   height: 64px;
