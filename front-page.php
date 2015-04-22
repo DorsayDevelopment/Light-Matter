@@ -9,7 +9,11 @@
 
 <?php get_header(); ?>
 
-Front-page
+<main>
+    <div class="container">
+        Front-page
+    </div>
+</main>
 
 <?php get_footer(); ?>
 
