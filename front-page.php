@@ -10,26 +10,14 @@
 <?php get_header(); ?>
 
 <main>
-    <div class="slider fullscreen">
-        <ul class="slides">
-            <li>
-                <img src="<?php bloginfo('template_url'); ?>/img/atmosphere.jpg"> <!-- random image -->
-            </li>
-            <li>
-                <img src="<?php bloginfo('template_url'); ?>/img/moon.jpg"> <!-- random image -->
-            </li>
-            <li>
-                <img src="<?php bloginfo('template_url'); ?>/img/mountains2.jpg"> <!-- random image -->
-            </li>
-            <li>
-                <img src="<?php bloginfo('template_url'); ?>/img/jupiter.jpg"> <!-- random image -->
-            </li>
-        </ul>
+    <div id="slider-widget-area">
+
+        <?php if (function_exists('dynamic_sidebar') && dynamic_sidebar('slider-widget-area')) : else : ?>
+
+
+        <?php endif; ?>
     </div>
 
-    <div class="container">
-
-    </div>
 </main>
 
 <?php get_footer(); ?>

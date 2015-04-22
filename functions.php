@@ -21,9 +21,25 @@ function lightmatter_scripts() {
 
 add_action( 'wp_enqueue_scripts', 'lightmatter_scripts' );
 
-include("slider_widget.php");
-// Register and load the widget
-function wpb_load_widget() {
-    register_widget( 'slider_widget' );
+function lightmatter_widgets_init() {
+
+    register_sidebar(array(
+        'name' => 'Slider Widget Area',
+        'id'   => 'slider-widget-area',
+        'description'   => 'Main page slider widget area',
+        'before_widget' => '<div id="%1$s" class="widget %2$s">',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h4>',
+        'after_title'   => '</h4>'
+    ));
+
 }
-add_action( 'widgets_init', 'wpb_load_widget' );
+
+add_action( 'widgets_init', 'lightmatter_widgets_init');
+
+include('slider-widget.php');
+// register Slider_Widget widget
+function register_slider_widget() {
+    register_widget( 'Slider_Widget' );
+}
+add_action( 'widgets_init', 'register_slider_widget' );
