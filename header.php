@@ -18,8 +18,9 @@
 <body>
 
 <header>
+    <div class="navbar-fixed">
     <nav>
-        <div class="nav-wrapper">
+        <div class="container">
             <a href="#!" class="brand-logo">Logo</a>
             <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
             <ul class="right hide-on-med-and-down">
@@ -36,6 +37,7 @@
             </ul>
         </div>
     </nav>
+    </div>
 
 </header>
 
