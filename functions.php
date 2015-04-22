@@ -20,3 +20,10 @@ function lightmatter_scripts() {
 }
 
 add_action( 'wp_enqueue_scripts', 'lightmatter_scripts' );
+
+include("slider_widget.php");
+// Register and load the widget
+function wpb_load_widget() {
+    register_widget( 'slider_widget' );
+}
+add_action( 'widgets_init', 'wpb_load_widget' );

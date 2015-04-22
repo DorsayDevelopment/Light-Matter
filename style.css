@@ -22,6 +22,9 @@ nav {
   nav .brand-logo, nav li a {
     color: white; }
 
+.indicator-item.active {
+  background-color: #0059bc !important; }
+
 .navbar-fixed {
   height: 0; }
 

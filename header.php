@@ -21,7 +21,7 @@
     <div class="navbar-fixed">
     <nav>
         <div class="container">
-            <a href="#!" class="brand-logo">Logo</a>
+            <a href="#" class="brand-logo"><?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?></a>
             <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
             <ul class="right hide-on-med-and-down">
                 <li><a href="sass.html">Sass</a></li>
