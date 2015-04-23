@@ -13,8 +13,7 @@
     <div id="slider-widget-area">
 
         <?php if (function_exists('dynamic_sidebar') && dynamic_sidebar('slider-widget-area')) : else : ?>
-
-
+            there should be a widget here
         <?php endif; ?>
     </div>
 

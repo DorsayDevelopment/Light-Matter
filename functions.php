@@ -28,9 +28,7 @@ function lightmatter_widgets_init() {
         'id'   => 'slider-widget-area',
         'description'   => 'Main page slider widget area',
         'before_widget' => '<div id="%1$s" class="widget %2$s">',
-        'after_widget'  => '</div>',
-        'before_title'  => '<h4>',
-        'after_title'   => '</h4>'
+        'after_widget'  => '</div>'
     ));
 
 }
