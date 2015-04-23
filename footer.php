@@ -8,7 +8,7 @@
 ?>
 
 <footer>
-    <div class="container">
+    <div class="container center">
         Footer
     </div>
 </footer>

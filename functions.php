@@ -36,10 +36,3 @@ function lightmatter_widgets_init() {
 }
 
 add_action( 'widgets_init', 'lightmatter_widgets_init');
-
-include('slider-widget.php');
-// register Slider_Widget widget
-function register_slider_widget() {
-    register_widget( 'Slider_Widget' );
-}
-add_action( 'widgets_init', 'register_slider_widget' );
