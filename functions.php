@@ -19,7 +19,7 @@ function lightmatter_scripts() {
     wp_enqueue_style('style', get_stylesheet_uri());
 }
 
-add_action( 'wp_enqueue_scripts', 'lightmatter_scripts' );
+add_action( 'wp_enqueue_scripts', 'lightmatter_scripts' ); // 100 means load 100th priority, definitely last in this case
 
 function lightmatter_widgets_init() {
 
